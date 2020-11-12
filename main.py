@@ -14,6 +14,15 @@ bankroll = int(input('''Enter Eddie's initial bankroll:
 '''))
 goalamnt = int(input('''Enter Eddie's desired amount: 
 '''))
+
+while (bankroll > goalamnt):
+  bankroll = int(input('''
+Goal amount cannot be less than bankroll.
+Enter Eddie's initial bankroll: 
+'''))
+  goalamnt = int(input('''Enter Eddie's desired amount: 
+'''))
+
 roundnum = 0
 winnum = 0
 lossnum = 0
